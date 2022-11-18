@@ -1,1 +1,350 @@
-<h2>Hello world</h2>
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Affect Dialog</title>
+
+    <meta name="description" content="image,generation">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <!--Open Graph Related Stuff-->
+  <meta property="og:title" content="affective dialog"/>
+  <meta property="og:url" content=""/>
+  <meta property="og:description" content="affective dialog"/>
+  <meta property="og:site_name" content="affective dialog"/>
+  <meta property="og:image" content=""/>
+
+  <!--Twitter Card Stuff-->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="affective dialog"/>
+  <meta name="twitter:image" content="">
+  <meta name="twitter:url" content=""/>
+  <meta name="twitter:description" content="affective dialog"/>
+
+
+    <link rel="icon" type="image/png" href="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+    <script src="js/app.js"></script>
+</head>
+
+
+<body>
+
+<div class="container" id="main">
+    <div class="row">
+
+        <h2 class="col-md-12 text-center" style="padding-bottom:20px">
+            <span style="font-size:35pt"><b>Affective Visual Dialog : A Large-Scale Benchmark for Developing Emotion-Aware Vision Learners </b></span>
+        </h2>
+    </div>
+
+
+    <div class="row" id="team">
+
+        <div class="col-md-12 text-center">
+            <ul class="list-inline" style="font-size:17pt;">
+                <li>
+                    <a href="">
+                    </a>
+                    <sup></sup>
+                </li>
+                <li>
+                    <a href="">
+                    </a>
+                    <sup></sup>
+                </li>
+                <li>
+                    <a href="">
+                        
+                    </a>
+                    <sup></sup>
+                </li>
+                <br>
+                <li>
+                    <a href="">
+                       
+                    </a>
+                    <sup></sup>
+                </li>
+                <li>
+                    <a href="">
+                        
+                    </a>
+                    <sup></sup>
+                </li>
+            </ul>
+            <ul style="list-style-type:none;">
+                <li style="font-size: 14pt;"><sup></sup</li>
+                <li style="font-size: 14pt;"><sup></sup</li>
+                <li style="font-size: 14pt;"><sup></sup> </li>
+            </ul>
+        </div>
+    </div>
+ 
+    <div class="row" style="padding-top:45px">
+        <div class="col-md-8 col-md-offset-2 text-center">
+            <ul class="nav nav-pills nav-justified">
+                <li>
+                    <a href="#">
+                        <!-- <img src="img/github.png" style="padding:10pt" width="80" height="80">--->
+                        <h4><strong>[Code]</strong></h4>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+<!--     <div class="row" style="padding-bottom:30px">
+        <div class="col-md-8 col-md-offset-2">
+            <h3>
+                <b>News</b>
+            </h3>
+
+            <ul>
+                <li>
+                    [01.10.2021]
+                    <span style="color:red;font-size:13pt">
+                     The complete code & data will be released soon (ETA: 02-25-2021). Stay Tuned!!
+                    </span>
+                </li>
+
+            </ul>
+
+        </div>
+    </div> -->
+
+
+
+    <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">Abstract <span class="text-muted"></span></h2>
+          <p class="text">
+            The ability of AI systems to understand human feelings enables them to be more compatible with our emotional being, 
+            informing higher quality interactions with us and hence better service towards our goals. In this paper, we study the role 
+            of affective language in the form of conversation grounded on visual stimuli in informing human decisions about 
+            his/her emotion. Toward this goal, we collected a new dataset, dubbed AffectVisDial, of 30800 dialogs of 10-turns 
+            as well as concluding emotion attributions and dialog-informed textual explanations, resulting in a total of 
+            15781 hours working hours. The dialog starts with an image and two emotion opinions about the image (one positive and one negative). 
+            Then two participants, a Questioner and an Answerer , are instructed to have a conversation through which the Questioner
+             ( can not see the image) asks questions to the Answerer for the purpose of deciding how he/she feels about it. 
+             In the end, we asked both the Questioner and Answerer to provide the emotion they felt and an explanation of what 
+             in the conversation informed their decision. Building on AffectVisDial, we comprehensively study the Affective 
+             Visual Dialog task through two skills: (1) Dialog-based Question Answering: the skill of generating the last answer 
+             in the conversation or at an arbitrary turn given the dialog history and the image ( similar to the typical visual dialog setting). 
+             We also introduce (2) Dialog-based Emotion classification and Affective explanation: the skill of predicting the emotion 
+             class and corresponding affective explanation based on the dialog history for the Questioner or the dialog history combined
+              and the image from the Answerer. We train and demonstrate strong Affective Visual Dialog baselines adapted from 
+              state-of-the-art models. Remarkably, the responses generated by our models how promising emotional reasoning abilities 
+              in response to visually grounded conversations. The dataset and code will be made publicly available, and we hope that 
+              will help ease future affective vision research and that Affective Visual Dialog serves as a test for machine emotional intelligence.
+          </p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img src="assets/images/teaser.png" class="featurette-image img-responsive center-block"  alt="Generic placeholder image">
+        </div>
+    </div>
+    
+
+    <div class="row" >
+        <h2> The process of Chat Interaction</h2>
+        <!-- 16:9 aspect ratio -->
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://drive.google.com/file/d/1os65OgLY_id1QNll-d_RgbUWmcAMxTDt/preview" allow="autoplay"></iframe>
+        </div>
+    </div>
+
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+        <h2> Examples from Dataset</h2>
+        <div class="col-lg-4">
+          <img class="img-responsive" src="assets/images/example1.jpeg" alt="Generic placeholder image" width="140" height="140">
+          <p><b>sadness:</b>The sky looks like it's really muddy since it seems to be glowing with an odd shade of gray</p>
+          <p><b>contentment:</b>The meadow is foggy and pleasant in the early morning light</p>
+          <hr>
+
+            <p class="text-primary">1: Is this an indoor or an outdoor scene? </p>
+            <p class="text-danger">        2: It is an outdoor scene.</p>
+            <p class="text-primary">3: Is it rural or is it urban? </p>
+            <p class="text-danger">                4: It looks to be rural.</p>
+            <p class="text-primary">5: Are there any people present? </p>
+            <p class="text-danger">                6: No, there are no people.</p>
+            <p class="text-primary">7: Are there any animals? </p>
+            <p class="text-danger">                8: No, no animals.</p>
+            <p class="text-primary">9: What is the weather like? </p>
+            <p class="text-danger">                10: It is a little hard to tell because of how the image is painted, but it looks to be either sunny or cloudy.</p>
+            <p class="text-primary">11: Is the sun itself actually visible? </p>
+            <p class="text-danger">                12: No, the sun is not visible.</p>
+            <p class="text-primary">13: Is there anything that can date the picture? </p>
+            <p class="text-danger">                14: Not that i can see.</p>
+            <p class="text-primary">15: Can you tell what time of day it is? </p>
+            <p class="text-danger">                16: Sometime during the day where the light is shining. May be midday.</p>
+            <p class="text-primary">17: What are the main colours here? </p>
+            <p class="text-danger">                18: Purple, green, and blue.</p>
+            <p class="text-primary">19: Does it put you in mind of any particular painter? </p>
+            <p class="text-danger">                20: Van Gogh, maybe.</p>
+
+            <hr>
+            <p>Questioner Response before observing image:</p>
+            <p> Contentment: This sounds as if it is entirely non threatening, just a peaceful outdoor scene </p>
+            <p>Questioner Response after observing image:</p>
+            <p> Fear: Some of the shapes are frankly rather creepy ... like hands stretching out of the earth</p> 
+            <hr>
+            <p>Answerer Response:</p>
+            <p> Contentment: This painting makes me think of having a picnic in the forest. </p>
+
+        </div><!-- /.col-lg-4 -->
+
+
+        <div class="col-lg-4">
+            <img class="img-responsive" src="assets/images/example2.jpeg" alt="Generic placeholder image" width="140" height="140">
+            <p><b>disgust:</b>It takes a true master to capture facial expression, this doesn't have it.</p>
+            <p><b>awe:</b>The details are incredible, to think that these painting are over 100 years old is mind blowing</p>
+            <hr>
+
+            <p class="text-primary">1: Are there humans in the picture?</p>
+            <p class="text-danger">                2: Yes there is one human being here. </p>
+            <p class="text-primary">3: Is this a portrait, with the main focus being on the person? Or is there more detail in the back ground?</p>
+            <p class="text-danger">                4: It is a portrait. The person is looking directly at the artist. </p>
+            <p class="text-primary">5: Are they looking in a romantic way?</p>
+            <p class="text-danger">                6: No there is nothing romantic about it</p> 
+            <p class="text-primary">7: Can you describe the person? Is it a man or a woman?</p>
+            <p class="text-danger">                8: It is a man, probably in his early fifties. </p>
+            <p class="text-primary">9: Would you say he is well off and healthy?</p>
+            <p class="text-danger">                10: He looks fairly affluent but I can't tell if he is healthy or not </p>
+            <p class="text-primary">11: Is the portrait set in doors?</p>
+            <p class="text-danger">                12: It's hard to tell for sure but it is very likely that it is </p>
+            <p class="text-primary">13: What is he wearing?</p>
+            <p class="text-danger">                14: A large black coat under which collars and cuffs in white are visible </p>
+            <p class="text-primary">15: What period of time do you think he lived in?</p>
+            <p class="text-danger">                16: I would guess in the late nineteenth century </p>
+            <p class="text-primary">17: Is there any obvious emotion to the painting?</p>
+            <p class="text-danger">                18: No, it all looks very sombre really. </p>
+            <p class="text-primary">19: How is his hair kept?</p>
+            <p class="text-danger">                20: It is thinning on top and longer around his ears, similar to Shakespeare's style</p>
+  
+              <hr>
+              <p>Questioner Response before observing image:</p>
+              <p> Sadness: There is little that stirred me in hearing about the portrait it seems like a general capture of the 19th century with little emotion or attempt for it.  </p>
+              <p>Questioner Response after observing image:</p>
+              <p> Sadness: The man's facial expression makes me think of the taboo of having your image taken, as if he thinks that he or the painter are unworthy of it. It reminds me of the general moral discomfort of the past.</p> 
+              <hr>
+              <p>Answerer Response:</p>
+              <p> Something else: Indifference - the man's expression does not really convey anything very much. </p>
+  
+          </div><!-- /.col-lg-4 -->
+
+          <div class="col-lg-4">
+            <img class="img-responsive" src="assets/images/example3.jpeg" alt="Generic placeholder image" width="140" height="140">
+            <p><b>contentment:</b>The man looks contemplative and bored, and a little slumped down in his chair.</p>
+            <p><b>sadness:</b>Those beady little eyes remind me of a man in a drunken stupor.</p>
+            <hr>
+                <p class="text-primary">1: How many people, if any, are in the image? </p>
+                <p class="text-danger">                2: There is just one man in the image. </p>
+                <p class="text-primary">3: Is he doing anything or just sitting for a portrait? </p>
+                <p class="text-danger">                4: He is posing like it's a portrait but it is a painting. </p>
+                <p class="text-primary">5: Is he older or younger? </p>
+                <p class="text-danger">                6: He looks older but not elderly. I would say in his thirties or fourties. </p>
+                <p class="text-primary">7: Are there any objects in the picture? </p>
+                <p class="text-danger">                8: The is just the man and what looks like a window or mirror behind him. </p>
+                <p class="text-primary">9: What do his clothes look like? </p>
+                <p class="text-danger">                10: It looks like he is wearing a larger overcoat.  </p>
+                <p class="text-primary">11: Does he have facial hair? </p>
+                <p class="text-danger">                12: He has a moustache and a goatee.  </p>
+                <p class="text-primary">13: What color or colors are in the background? </p>
+                <p class="text-danger">                14: The majority of the painting is in a sort of tan color. </p>
+                <p class="text-primary">15: Can you estimate how old the painting is by its style? </p>
+                <p class="text-danger">                16: It's hard to tell the age of the painting. It looks like it may be a few decades old. </p>
+                <p class="text-primary">17: Is he painted realistically, or is he exaggerated in some areas? </p>
+                <p class="text-danger">                18: It looks like a realistic painting. </p>
+                <p class="text-primary">19: What color is his hair? </p>
+                <p class="text-danger">                20: The man's hair is brown. </p>
+              <hr>
+              <p>Questioner Response before observing image:</p>
+              <p> Something else: I feel a bit bored. It sounds like another portrait. No story, and the tan coloring seems dull. </p>
+              <p>Questioner Response after observing image:</p>
+              <p> Contentment: His facial expression is actually very good. He looks to be contemplating something, maybe thinking about the past.</p> 
+              <hr>
+              <p>Answerer Response:</p>
+              <p> Sadness: The man looks moody and bored </p>
+  
+          </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+    <div class="row" >
+        <h2> Qualitative Examples</h2>
+        
+    </div>
+    <!--- 
+
+
+
+        <div class="row" id="code" style="padding-bottom:30px">
+        <div class="col-md-8 col-md-offset-2">
+            <h3>                
+                <b>Code</b>
+            </h3>
+        </div>
+    </div>
+
+
+    <div class="row" id="citation" style="padding-bottom:30px">
+        <div class="col-md-8 col-md-offset-2">
+            <h3>
+                <b>Citation</b>
+            </h3>
+            <p class="text-justify">If you find our work useful in your research, please consider citing:</p>
+
+            <pre class="w1-panel w3-leftbar w3-light-grey">
+
+            </pre>
+
+        </div>
+    </div>
+
+
+    <div class="row" id="contact" style="padding-bottom:30px">
+        <div class="col-md-8 col-md-offset-2">
+            <h3>
+                <b>Contact</b>
+            </h3>
+        </div>
+    </div>
+
+    <div class="row" style="padding-bottom:30px">
+        <div class="col-md-8 col-md-offset-2">
+            <h3>
+                <b>Acknowledgements</b>
+            </h3>
+            <p class="text-justify">
+                
+            </p>
+        </div>
+    </div>
+
+    <div class="row" style="padding-top:40px">
+        <div class="col-md-6 col-md-offset-3">
+        <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=080808&w=a&t=tt&d=2u0es-k4gUQLQS9QD76xJ-rpuT-YO8fJ1Fv_20Ir23I&co=ffffff&cmo=3acc3a&cmn=ff5353&ct=808080"></script>
+        </div>
+    </div>
+     -->
+
+</div>
+</body>
+
+</html>

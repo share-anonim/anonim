@@ -1,0 +1,6 @@
+[submodule "models/visdial-bert"]
+	path = models/visdial-bert
+	url = https://github.com/vmurahari3/visdial-bert.git
+[submodule "models/ltmi"]
+	path = models/ltmi
+	url = https://github.com/davidnvq/visdial.git
